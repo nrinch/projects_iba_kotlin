@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CirclesAvaterView">
+        <attr name="cav_borderColor" format="color" />
+        <attr name="cav_borderWidth" format="dimension" />
+    </declare-styleable>
+</resources>
