@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">iba_kotlin_4thlesson</string>
+    <string name="enter_your_pin">Enter your PIN</string>
+    <string name="wrong_pin">Wrong pin</string>
+</resources>

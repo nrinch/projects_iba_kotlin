@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorFireOpal">#EF6461</color>
+    <color name="colorSunday">#E4B363</color>
+    <color name="colorPlatium">#E8E9EB</color>
+    <color name="colorAlabaster">#E0DFD5</color>
+    <color name="colorOnyx">#313638</color>
+
+</resources>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthActivity">
+
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/pin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/enter_your_pin"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/wrong_pin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wrong_pin"
+        android:textColor="@color/colorFireOpal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/pin_first"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pin_text" />
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/pin_first"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineLeft"
+        app:layout_constraintRight_toLeftOf="@id/pin_two"
+        app:neumorph_backgroundColor="@color/colorOnyx" />
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/pin_two"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintLeft_toRightOf="@id/pin_first"
+        app:layout_constraintRight_toLeftOf="@id/pin_three"
+        app:neumorph_backgroundColor="@color/colorOnyx" />
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/pin_three"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintLeft_toRightOf="@id/pin_two"
+        app:layout_constraintRight_toLeftOf="@id/pin_four"
+
+        app:neumorph_backgroundColor="@color/colorOnyx" />
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/pin_four"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintLeft_toRightOf="@id/pin_three"
+        app:layout_constraintRight_toRightOf="@id/guidelineRight"
+        app:neumorph_backgroundColor="@color/colorOnyx" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/number_one"
+        style="@style/NeumorphNumberButton"
+        android:onClick="enterNumber"
+
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@id/number_four"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineLeft"
+        app:layout_constraintRight_toLeftOf="@id/number_two"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        app:layout_constraintWidth_default="spread" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/number_two"
+        style="@style/NeumorphNumberButton"
+        android:onClick="enterNumber"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@id/number_five"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintLeft_toRightOf="@id/number_one"
+        app:layout_constraintRight_toLeftOf="@id/number_three"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        app:layout_constraintWidth_default="spread" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/number_three"
+        style="@style/NeumorphNumberButton"
+        android:onClick="enterNumber"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@id/number_six"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintLeft_toRightOf="@id/number_two"
+        app:layout_constraintRight_toRightOf="@id/guidelineRight"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        app:layout_constraintWidth_default="spread" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/number_four"
+        style="@style/NeumorphNumberButton"
+        android:onClick="enterNumber"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@id/number_seven"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineLeft"
+        app:layout_constraintRight_toLeftOf="@id/number_five"
+        app:layout_constraintTop_toBottomOf="@id/number_one"
+        app:layout_constraintWidth_default="spread" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/number_five"
+        style="@style/NeumorphNumberButton"
+        android:onClick="enterNumber"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@id/number_eight"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintLeft_toRightOf="@id/number_four"
+        app:layout_constraintRight_toLeftOf="@id/number_six"
+        app:layout_constraintTop_toBottomOf="@id/number_two"
+        app:layout_constraintWidth_default="spread" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/number_six"
+        style="@style/NeumorphNumberButton"
+        android:onClick="enterNumber"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@id/number_nine"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintLeft_toRightOf="@id/number_two"
+        app:layout_constraintRight_toRightOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/number_three"
+        app:layout_constraintWidth_default="spread" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/number_seven"
+        style="@style/NeumorphNumberButton"
+        android:onClick="enterNumber"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@id/number_zero"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineLeft"
+        app:layout_constraintRight_toLeftOf="@id/number_eight"
+        app:layout_constraintTop_toBottomOf="@id/number_four"
+        app:layout_constraintWidth_default="spread" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/number_eight"
+        style="@style/NeumorphNumberButton"
+        android:onClick="enterNumber"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@id/number_zero"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintLeft_toRightOf="@id/number_seven"
+        app:layout_constraintRight_toLeftOf="@id/number_nine"
+        app:layout_constraintTop_toBottomOf="@id/number_five"
+        app:layout_constraintWidth_default="spread" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/number_nine"
+        style="@style/NeumorphNumberButton"
+        android:onClick="enterNumber"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@id/number_zero"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintLeft_toRightOf="@id/number_two"
+        app:layout_constraintRight_toRightOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/number_six"
+        app:layout_constraintWidth_default="spread" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/number_zero"
+        style="@style/NeumorphNumberButton"
+        android:onClick="enterNumber"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintLeft_toLeftOf="@id/number_eight"
+        app:layout_constraintRight_toRightOf="@id/number_eight"
+        app:layout_constraintTop_toBottomOf="@id/number_eight"
+        app:layout_constraintWidth_default="spread" />
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/clear"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:padding="24dp"
+        android:src="@drawable/backspace_24"
+        android:tint="@color/colorOnyx"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintLeft_toLeftOf="@id/number_nine"
+        app:layout_constraintRight_toRightOf="@id/number_nine"
+        app:layout_constraintTop_toBottomOf="@id/number_nine"
+        app:layout_constraintWidth_default="spread" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="220dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="64dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

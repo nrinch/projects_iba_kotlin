@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="user"
+            type="na.severinchik.iba_kotlin_4thlesson.ProUser" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/text_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@{user.name}"
+            android:textSize="24sp"
+
+            app:layout_constraintWidth_default="spread"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineLeft"
+            app:layout_constraintRight_toRightOf="@id/guidelineRight"
+            app:layout_constraintTop_toTopOf="@id/guideline" />
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/text_surname"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@{user.surname}"
+            android:textSize="24sp"
+            app:layout_constraintWidth_default="spread"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineLeft"
+            app:layout_constraintRight_toRightOf="@id/guidelineRight"
+            app:layout_constraintTop_toBottomOf="@id/text_name" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/clicker"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_size"
+            android:text="Go to clicker"
+            android:gravity="center"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/text_surname"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineLeft"
+            app:layout_constraintRight_toRightOf="@id/guidelineRight"
+            />
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/send_data"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_size"
+            android:text="SendData"
+            android:gravity="center"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/clicker"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineLeft"
+            app:layout_constraintRight_toRightOf="@id/guidelineRight"
+            />
+
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/button_phone"
+
+            style="@style/ShapeAppearance.Neumorph.Button"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:padding="24dp"
+            android:src="@drawable/phone_24"
+            android:tint="@color/colorOnyx"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineLeft"
+            app:layout_constraintRight_toLeftOf="@id/button_sms"
+            app:neumorph_shapeType="basin" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/button_sms"
+            style="@style/ShapeAppearance.Neumorph.Button"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:padding="24dp"
+            android:src="@drawable/sms_24"
+            android:tint="@color/colorOnyx"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/button_phone"
+            app:layout_constraintRight_toLeftOf="@id/button_email"
+            app:neumorph_shapeType="basin" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/button_email"
+            style="@style/ShapeAppearance.Neumorph.Button"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:padding="24dp"
+            android:src="@drawable/email_24"
+            android:tint="@color/colorOnyx"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/button_sms"
+            app:layout_constraintRight_toLeftOf="@id/button_web"
+            app:neumorph_shapeType="basin" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/button_web"
+            style="@style/ShapeAppearance.Neumorph.Button"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:padding="24dp"
+            android:src="@drawable/web_24"
+            android:tint="@color/colorOnyx"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/button_email"
+            app:layout_constraintRight_toRightOf="@id/guidelineRight"
+            app:neumorph_shapeType="basin" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="250dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
