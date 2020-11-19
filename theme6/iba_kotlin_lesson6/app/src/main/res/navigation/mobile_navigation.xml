@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="na.severinchik.iba_kotlin_lesson6.ui.band.BandFragment"
+        android:label="@string/band"
+        tools:layout="@layout/fragment_band" >
+        <action
+            android:id="@+id/action_navigation_band_to_oneBandFragment"
+            app:destination="@id/oneBandFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="na.severinchik.iba_kotlin_lesson6.ui.genre.GenreFragment"
+        android:label="@string/genre"
+        tools:layout="@layout/fragment_genre" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="na.severinchik.iba_kotlin_lesson6.ui.tracks.TrackssFragment"
+        android:label="@string/tracks"
+        tools:layout="@layout/fragment_tracks" />
+    <fragment
+        android:id="@+id/oneBandFragment"
+        android:name="na.severinchik.iba_kotlin_lesson6.ui.OneBandFragment"
+        android:label="OneBandFragment" />
+</navigation>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">iba_kotlin_lesson6</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="band">Bands</string>
+    <string name="genre">Genres</string>
+    <string name="tracks">Tracks</string>
+    
+    <string name="symbol">\u21a1</string>
+
+    <array name="list">
+        <item>Paranoid</item>
+        <item>andranoid</item>
+        <item>Paranoid</item>
+        <item>Paranoid</item>
+    </array>
+</resources>
