@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">iba_kotlin_lesson7</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialog_message">ALARM!!!</string>
+    <string name="dialog_title">AlertDialog</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="alert_dialog">AlertDialog</string>
+    <string name="alert_dialog_message">Anything else?</string>
+    <string name="nothing">\?</string>
+    <string name="dialog_fragment">DialogFragment</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+</resources>

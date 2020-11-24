@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/itemFragment">
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="na.severinchik.iba_kotlin_lesson7.ItemFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" />
+    <fragment
+        android:id="@+id/dialogsFragment"
+        android:name="na.severinchik.iba_kotlin_lesson7.DialogsFragment"
+        android:label="fragment_dialogs"
+        tools:layout="@layout/fragment_dialogs" />
+    <action android:id="@+id/action_global_itemFragment" app:destination="@id/itemFragment" />
+    <action android:id="@+id/action_global_dialogsFragment" app:destination="@id/dialogsFragment" />
+    <fragment
+        android:id="@+id/SPFragment"
+        android:name="na.severinchik.iba_kotlin_lesson7.SPFragment"
+        android:label="fragment_s_p"
+        tools:layout="@layout/fragment_s_p" />
+    <action android:id="@+id/action_global_SPFragment" app:destination="@id/SPFragment" />
+    <fragment
+        android:id="@+id/JSOnFragment"
+        android:name="na.severinchik.iba_kotlin_lesson7.JSOnFragment"
+        android:label="fragment_j_s_on"
+        tools:layout="@layout/fragment_j_s_on" /><action android:id="@+id/action_global_JSOnFragment" app:destination="@id/JSOnFragment"/>
+</navigation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/medium_padding"
+        tools:context=".DialogsFragment">
+
+        <TextView
+            android:id="@+id/output_textView"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_button_size"
+            tools:text="Text"/>
+
+        <Button
+            android:id="@+id/button_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_button_size"
+            android:text="Dialog" />
+
+        <Button
+            android:id="@+id/button_alert_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_button_size"
+            android:text="AlertDialog" />
+
+        <Button
+            android:id="@+id/button_time_picker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_button_size"
+            android:text="TimePicker" />
+
+        <Button
+            android:id="@+id/button_date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_button_size"
+            android:text="DatePicker" />
+
+        <Button
+            android:id="@+id/button_fragment_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_button_size"
+            android:text="FragmentDialog" />
+
+    </LinearLayout>
+</layout>
