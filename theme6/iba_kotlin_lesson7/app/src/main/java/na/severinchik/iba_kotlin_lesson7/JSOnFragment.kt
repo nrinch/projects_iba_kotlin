@@ -16,19 +16,19 @@ import java.io.File
 class JSOnFragment : Fragment() {
     private var stringBuilder: StringBuilder? = null
 
-    lateinit var binding:FragmentJSOnBinding
+    lateinit var binding: FragmentJSOnBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_j_s_on,container,false);
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_j_s_on, container, false);
         requireActivity().externalCacheDir?.let {
             val fileName = it.absolutePath + "/PostJson.json"
             writeJSONtoFile(fileName)
             binding.outputJson.text = readJSONfromFile(fileName)
 
         }
-requireActivity()
+        requireActivity()
         return view
     }
 
