@@ -12,6 +12,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.PopupMenu
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.coroutines.runBlocking
 import na.severinchik.iba_kotlin_lesson7.dummy.DummyContent
 
 
@@ -36,7 +37,7 @@ class ItemFragment : Fragment(), PopupMenu.OnMenuItemClickListener {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_item_list, container, false)
         var recyclerView = view.findViewById<RecyclerView>(R.id.list);
-
+        runBlocking {  }
         with(recyclerView) {
             layoutManager = when {
                 columnCount <= 1 -> LinearLayoutManager(context)
