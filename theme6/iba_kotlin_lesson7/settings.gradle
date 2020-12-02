@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "iba_kotlin_lesson7"
