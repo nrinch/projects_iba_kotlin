@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeActivity">
+
+        <TextView
+            android:id="@+id/userid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="@color/design_default_color_primary"
+            app:layout_constraintBottom_toBottomOf="@id/logout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/logout"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Login" />
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:src="@drawable/ic_baseline_login_24"
+            android:tint="@color/white"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_field_username"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="New Name"
+            android:textColorHint="@color/design_default_color_primary"
+            app:layout_constraintBottom_toBottomOf="@id/edit_username"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/edit_username"
+            app:layout_constraintTop_toBottomOf="@id/userid" />
+
+        <ImageButton
+            android:id="@+id/edit_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:tint="@color/white"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logout" />
+
+        <EditText
+            android:id="@+id/title_notification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:hint="Tittle notification"
+            android:textColorHint="@color/design_default_color_primary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_field_username" />
+
+        <EditText
+            android:id="@+id/message_notification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Message notification"
+            android:textColorHint="@color/design_default_color_primary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_notification" />
+
+        <EditText
+            android:id="@+id/receiver_notification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Token"
+            android:textColorHint="@color/design_default_color_primary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/message_notification" />
+
+        <Button
+            android:id="@+id/send_Notification"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Send"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/receiver_notification" />
+
+        <ImageView
+            android:id="@+id/image_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/send_Notification" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

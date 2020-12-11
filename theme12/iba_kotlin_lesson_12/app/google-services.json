@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "849701958436",
+    "project_id": "ibaktln",
+    "storage_bucket": "ibaktln.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849701958436:android:9d213f24739053c32379b1",
+        "android_client_info": {
+          "package_name": "na.severinchik.iba_kotlin_lesson_12"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849701958436-cc8m2bpaibj1bd97uov0apgvupsrg3jp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "na.severinchik.iba_kotlin_lesson_12",
+            "certificate_hash": "b01da06e6e7b356d4fdcadfb265a50c69aa776cf"
+          }
+        },
+        {
+          "client_id": "849701958436-09lrqqkqbkmo2cidq5outbghr5b3vfj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBguN6IdRAx0EQG3pmEh788sdOxw7ElPBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849701958436-09lrqqkqbkmo2cidq5outbghr5b3vfj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
