@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_drwbl_anm"/>
+
+
+        <Button
+            android:id="@+id/btn_drwbl_anm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="anotherActivity"
+            android:text="Drawable Анимиция"
+            app:layout_constraintBottom_toTopOf="@id/btn_frgmt"
+            />
+
+        <Button
+            android:id="@+id/btn_frgmt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:onClick="startFragmentActivity"
+            android:text=" Анимиция fragment'ов"
+         app:layout_constraintBottom_toTopOf="@id/btn_gstr" />
+
+        <Button
+            android:id="@+id/btn_gstr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:onClick="startGestureActivity"
+            android:text="Жесты"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

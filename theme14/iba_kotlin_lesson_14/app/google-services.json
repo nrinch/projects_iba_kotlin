@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1045270855095",
+    "project_id": "ibaktln14",
+    "storage_bucket": "ibaktln14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045270855095:android:756876818eabcfcbdbfc32",
+        "android_client_info": {
+          "package_name": "na.severinchik.iba_kotlin_lesson_14"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045270855095-3m9642plqi9ur2nbebjg5hq16r1hbnck.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "na.severinchik.iba_kotlin_lesson_14",
+            "certificate_hash": "75b567bd8bd0fc4dbdb8e2d1dad8679812794a1d"
+          }
+        },
+        {
+          "client_id": "1045270855095-vgdfllq73ldc4307v1rkb18f5pqvh5h2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZIckV5GtUWv2dlM_QpbxFnBsMwmsh8U8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045270855095-vgdfllq73ldc4307v1rkb18f5pqvh5h2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
